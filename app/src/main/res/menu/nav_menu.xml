@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_photos"
+            android:icon="@drawable/icon_scan"
+            android:title="相册" />
+        <item
+            android:id="@+id/nav_second_fragment"
+            android:icon="@drawable/icon_scan"
+            android:title="Second" />
+        <item
+            android:id="@+id/nav_third_fragment"
+            android:icon="@drawable/icon_scan"
+            android:title="Third" />
+        <item android:title="Sub items">
+            <menu>
+                <group android:checkableBehavior="all">
+                    <item
+                        android:id="@+id/nav_setting"
+                        android:icon="@drawable/icon_scan"
+                        android:title="设置" />
+                    <item
+                        android:id="@+id/nav_five"
+                        android:icon="@drawable/icon_scan"
+                        android:title="Sub item 2" />
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>

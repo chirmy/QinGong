@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#59EFEBEB"
+    android:orientation="vertical" >
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"/>
+
+
+    <View
+        android:layout_width="366dp"
+        android:layout_height="2dp"
+        android:background="#CCC8C8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_rv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185dp"
+        android:layout_marginBottom="100dp"/>
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/home_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="600dp"
+        android:src="@drawable/icon_fab"
+        app:backgroundTint="#fff"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="631dp" />
+
+</RelativeLayout>

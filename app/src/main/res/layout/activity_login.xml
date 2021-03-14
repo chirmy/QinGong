@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="100dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/bg_login7">
+
+<!--    <ImageView
+        android:id="@+id/login_cimg_head"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_image"/>-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/login_cimg_head"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_image2" />
+
+
+    <EditText
+        android:id="@+id/login_et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_marginTop="10dp"
+        android:hint="@string/login_hint_account"
+        android:textColorHint="@color/app_white"
+        android:textColor="@color/app_white"
+        android:layout_below="@id/login_cimg_head"/>
+    <EditText
+        android:id="@+id/login_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:hint="@string/login_hint_password"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/login_et_username"
+        android:textColor="@color/app_white"
+        android:textColorHint="@color/app_white"/>
+    <LinearLayout
+        android:id="@+id/login_ly_bottom"
+        android:layout_below="@id/login_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/login_cb_rm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_checkbox_re"
+            android:textColor="@color/app_white"
+            android:layout_gravity="left"
+            android:layout_weight="3"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/login_btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="@string/login_button_register"
+            android:textColor="@color/app_white"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn_confirm"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_ly_bottom"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/edit_background"
+        android:text="@string/login_button_confirm"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/app_white" />
+
+
+
+
+</RelativeLayout>
