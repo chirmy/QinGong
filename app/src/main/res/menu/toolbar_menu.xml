@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always|collapseActionView"
+        />
+
+
+    <group>
+        <item
+            android:id="@+id/scan"
+            android:icon="@drawable/icon_scan"
+            android:title="扫一扫"
+            app:showAsAction="never"/>
+    </group>
+
+
+    <item
+        android:id="@+id/friends"
+        android:icon="@drawable/icon_friends"
+        android:title="加好友/群"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu_single_check"
+        android:title="单选按钮"
+        android:orderInCategory="1"
+        app:showAsAction="withText">
+        <menu>
+            <group android:id="@+id/group_single"
+                android:checkableBehavior="single"
+                android:menuCategory="system">
+                <item android:id="@+id/single_menu_01"
+                    android:title="单选按钮01"
+                    android:checked="true"/>
+                <item android:id="@+id/single_menu_02"
+                    android:title="单选按钮02"/>
+                <item android:id="@+id/single_menu_03"
+                    android:title="单选按钮03"/>
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/menu_all_check"
+        android:title="多选按钮"
+        android:orderInCategory="1"
+        app:showAsAction="withText">
+        <menu>
+            <group android:id="@+id/group_all"
+                android:checkableBehavior="all"
+                android:menuCategory="system"
+                android:enabled="true">
+                <item
+                    android:id="@+id/all_menu_01"
+                    android:title="多选按钮01"
+                    android:checked="true"/>
+                <item
+                    android:id="@+id/all_menu_02"
+                    android:title="多选按钮02"/>
+                <item
+                    android:id="@+id/all_menu_03"
+                    android:title="多选按钮03"/>
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

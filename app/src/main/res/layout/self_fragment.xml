@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:leon="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#59CACACA"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:id="@+id/share_imgView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+
+    <LinearLayout
+        android:id="@+id/self_heads"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/icon_image"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Chirmy"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/self_progress_bar"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/progressbar"
+        android:layout_below="@id/profile_image"
+        tools:ignore="NotSibling" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/self_heads">
+
+
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/self_message_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:leftIcon="@drawable/icon_message"
+            leon:leftText="我的资料"
+            tools:ignore="MissingClass,NotSibling"
+            android:layout_below="@id/self_heads"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/self_sign_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:leftIcon="@drawable/icon_sign"
+            leon:leftText="签到打卡"
+            android:layout_below="@id/self_message_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/self_time_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:leftIcon="@drawable/icon_table"
+            leon:leftText="上岗时间表"
+            leon:rightStyle="iconHide"
+            android:layout_below="@id/self_sign_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/self_route_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyCheckBox"
+            leon:leftIcon="@drawable/icon_route"
+            leon:leftText="路线规划"
+            leon:rightStyle="iconCheck"
+            android:layout_below="@id/self_time_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/self_team_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:leftIcon="@drawable/icon_team"
+            leon:leftText="勤工小组"
+            android:layout_below="@id/self_route_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/self_grade_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:leftIcon="@drawable/icon_grade"
+            leon:leftText="我的积分"
+            android:layout_below="@id/self_team_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/self_history_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:leftIcon="@drawable/icon_history"
+            leon:leftText="勤工足迹"
+            android:layout_below="@id/self_grade_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/self_location_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:isShowUnderLine="false"
+            leon:leftIcon="@drawable/icon_location"
+            leon:leftText="我的位置"
+            leon:rightStyle="iconSwitch"
+            tools:ignore="MissingClass"
+            android:layout_below="@id/self_history_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/item_six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyCheckBox"
+            leon:leftIcon="@drawable/icon_setting"
+            leon:leftText="设置"
+            tools:ignore="MissingClass"
+            android:layout_below="@id/self_location_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
